@@ -16,6 +16,6 @@ FlexibleBox.defaultProps = {
   element: 'div',
 }
 
-export const Column = (props) => <FlexibleBox {...props} column />
+export const Column: FC<FlexibleBoxPropTypes> = (props) => <FlexibleBox {...props} column />
 
-export const Row = (props) => <FlexibleBox {...props} row />
+export const Row: FC<FlexibleBoxPropTypes> = (props) => <FlexibleBox {...props} row />
