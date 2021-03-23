@@ -1,4 +1,14 @@
-export const flexClasses: { [key: string]: string } = {
+import { DisplayEnum, FlexibleBoxPropTypes } from './flexible-types'
+
+export const buildFlexibleClassName = ({ flex, ...props }: FlexibleBoxPropTypes) =>
+  Object.keys(props)
+    .filter((key) => props[key] === true)
+    .reduce(
+      (classes, property) => `${classes} ${flexibleBoxClasses[property] ? flexibleBoxClasses[property] : ''}`,
+      `flexible-box${flexibleBoxClasses[flex] ? ` ${flexibleBoxClasses[flex]}` : ''}`,
+    )
+
+export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   alignItemsStart: 'align-items-start',
   alignItemsEnd: 'align-items-end',
   alignItemsCenter: 'align-items-center',
@@ -26,6 +36,41 @@ export const flexClasses: { [key: string]: string } = {
   alignSelfBaseline: 'align-self-baseline',
   alignSelfStretch: 'align-self-stretch',
   alignSelfAuto: 'align-self-auto',
-  column: 'flexible-column',
-  row: 'flexible-row',
+  column: 'flexible-box-column',
+  row: 'flexible-box-row',
+  [DisplayEnum.flex]: 'flexible-box-flex',
+  [DisplayEnum.inlineFlex]: 'flexible-box-inline-flex',
 }
+
+export type FlexibleBoxClasses =
+  | 'alignItemsStart'
+  | 'alignItemsEnd'
+  | 'alignItemsCenter'
+  | 'alignItemsBaseline'
+  | 'alignItemsStretch'
+  | 'justifyContentStart'
+  | 'justifyContentEnd'
+  | 'justifyContentCenter'
+  | 'justifyContentSpaceAround'
+  | 'justifyContentSpaceEvenly'
+  | 'justifyContentSpaceBetween'
+  | 'justifyContentBaseline'
+  | 'justifyContentStretch'
+  | 'alignContentStart'
+  | 'alignContentEnd'
+  | 'alignContentCenter'
+  | 'alignContentSpaceAround'
+  | 'alignContentSpaceEvenly'
+  | 'alignContentSpaceBetween'
+  | 'alignContentBaseline'
+  | 'alignContentStretch'
+  | 'alignSelfStart'
+  | 'alignSelfEnd'
+  | 'alignSelfCenter'
+  | 'alignSelfBaseline'
+  | 'alignSelfStretch'
+  | 'alignSelfAuto'
+  | 'column'
+  | 'row'
+  | DisplayEnum.flex
+  | DisplayEnum.inlineFlex
