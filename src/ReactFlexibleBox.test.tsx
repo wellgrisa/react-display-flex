@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { ReactFlex } from './ReactFlexi'
+import { ReactFlex } from './ReactFlexibleBox'
 
 const getReactFlex = async () => screen.findByTestId('react-flex')
 
