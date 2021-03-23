@@ -14,6 +14,14 @@ describe('<FlexibleBox />', () => {
     expect(reactFlex.className).toBe('flexible-box')
   })
 
+  it('renders an element with the flexible class plus a given className', async () => {
+    render(<FlexibleBox className="given-class-name" data-testid="flexible-box" />)
+
+    const reactFlex = await getFlexibleBox()
+
+    expect(reactFlex).toHaveClass('flexible-box given-class-name')
+  })
+
   it('renders an element with the flexible class inline accordingly to the display (flex, inline-flex) structure', async () => {
     render(<FlexibleBox display={FlexibleDisplayEnum.flex} data-testid="flexible-box" />)
     render(<FlexibleBox display={FlexibleDisplayEnum.inlineFlex} data-testid="flexible-box" />)
