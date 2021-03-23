@@ -29,7 +29,7 @@ type AlignContentType = {
   alignContentBaseline?: boolean
   alignContentStretch?: boolean
 }
-type AlignSelfPropTypes = {
+type AlignSelfPropType = {
   alignSelfStart?: boolean
   alignSelfEnd?: boolean
   alignSelfCenter?: boolean
@@ -38,6 +38,23 @@ type AlignSelfPropTypes = {
   alignSelfAuto?: boolean
 }
 
-export type ReactFlexibleBoxPropTypes = PropsWithChildren<
-  AlignItemsType & JustifyContentType & AlignContentType & AlignSelfPropTypes & { [key: string]: any }
+type FlexDirectionType = {
+  column?: boolean
+  row?: boolean
+}
+
+type ElementType = {
+  element?: string
+}
+
+type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
+
+export type FlexibleBoxPropTypes = PropsWithChildren<
+  AlignItemsType &
+    JustifyContentType &
+    AlignContentType &
+    AlignSelfPropType &
+    FlexDirectionType &
+    ElementType &
+    HTMLAttributesType
 >

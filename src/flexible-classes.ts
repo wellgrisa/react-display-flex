@@ -26,4 +26,6 @@ export const flexClasses: { [key: string]: string } = {
   alignSelfBaseline: 'align-self-baseline',
   alignSelfStretch: 'align-self-stretch',
   alignSelfAuto: 'align-self-auto',
+  column: 'flexible-column',
+  row: 'flexible-row',
 }

@@ -122,9 +122,9 @@
   flex-wrap: wrap-reverse;
 }
 
-.react-flexible-box-column {
+.react-flexible-column {
   flex-direction: column;
 }
-.react-flexible-box-row {
+.react-flexible-row {
   flex-direction: row;
 }
