@@ -1,3 +1,15 @@
+.react-flexi-flex {
+  display: flex;
+}
+
+.react-flexi-flex {
+  display: flex;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
 .align-items-start {
   align-items: flex-start;
 }
@@ -40,4 +52,83 @@
 
 .justify-content-space-between {
   justify-content: space-between;
+}
+
+.justify-content-baseline {
+  justify-content: baseline;
+}
+
+.justify-content-stretch {
+  justify-content: stretch;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-baseline {
+  align-content: baseline;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-auto {
+  align-self: auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.react-flexi-column {
+  flex-direction: column;
+}
+.react-flexi-row {
+  flex-direction: row;
 }
