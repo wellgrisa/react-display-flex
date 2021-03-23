@@ -1,24 +1,33 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta } from '@storybook/react/types-6-0'
 
-import { FlexibleBoxPropTypes } from '../flexible-types'
-import { Flex, FlexibleBox } from '../FlexibleBox'
+import { Flex } from '../FlexibleBox'
+import { FlexibleBoxTemplate } from './build-stories-actors'
 
 export default {
-  title: 'Flex',
+  title: 'Container/Flex',
   component: Flex,
 } as Meta
 
-const ExampleFlexibleBox = () => <FlexibleBox className="example-box" />
+export const AlignItemsStart = FlexibleBoxTemplate.bind({})
 
-const Template: Story<FlexibleBoxPropTypes> = (args) => (
-  <Flex {...args}>
-    <ExampleFlexibleBox />
-    <ExampleFlexibleBox />
-    <ExampleFlexibleBox />
-  </Flex>
-)
-
-export const AlignItemsStart = Template.bind({})
 AlignItemsStart.args = {
   alignItemsStart: true,
+}
+
+export const AlignItemsCenter = FlexibleBoxTemplate.bind({})
+
+AlignItemsCenter.args = {
+  alignItemsCenter: true,
+}
+
+export const AlignItemsEnd = FlexibleBoxTemplate.bind({})
+
+AlignItemsEnd.args = {
+  alignItemsEnd: true,
+}
+
+export const AlignItemsStretch = FlexibleBoxTemplate.bind({})
+
+AlignItemsStretch.args = {
+  alignItemsStretch: true,
 }
