@@ -1,16 +1,13 @@
 import { createElement, FC } from 'react'
 
-interface PropTypes {
-  alignItemsStart?: boolean
-  [key: string]: any
-}
+import { flexClasses } from './react-flexible-classes'
+import { ReactFlexibleBoxPropTypes } from './types'
 
-const flexClasses: { [key: string]: string } = {
-  alignItemsStart: 'align-items-start',
-  alignItemsEnd: 'align-items-end',
-}
-
-export const ReactFlexibleBox: FC<PropTypes> = ({ children, element, ...rest }: PropTypes) => {
+export const ReactFlexibleBox: FC<ReactFlexibleBoxPropTypes> = ({
+  children,
+  element,
+  ...rest
+}: ReactFlexibleBoxPropTypes) => {
   const className = Object.keys(rest)
     .filter((key) => rest[key] === true)
     .reduce((classes, property) => `${classes} ${flexClasses[property]}`, 'react-flex')
