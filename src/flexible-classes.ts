@@ -1,4 +1,4 @@
-import { DisplayEnum } from './flexible-types'
+import { FlexibleDisplayEnum } from './flexible-types'
 
 export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   alignItemsStart: 'align-items-start',
@@ -30,8 +30,8 @@ export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   alignSelfAuto: 'align-self-auto',
   column: 'flexible-box-column',
   row: 'flexible-box-row',
-  [DisplayEnum.flex]: 'flexible-box-flex',
-  [DisplayEnum.inlineFlex]: 'flexible-box-inline-flex',
+  [FlexibleDisplayEnum.flex]: 'flexible-box-flex',
+  [FlexibleDisplayEnum.inlineFlex]: 'flexible-box-inline-flex',
 }
 
 export type FlexibleBoxClasses =
@@ -64,5 +64,5 @@ export type FlexibleBoxClasses =
   | 'alignSelfAuto'
   | 'column'
   | 'row'
-  | DisplayEnum.flex
-  | DisplayEnum.inlineFlex
+  | FlexibleDisplayEnum.flex
+  | FlexibleDisplayEnum.inlineFlex

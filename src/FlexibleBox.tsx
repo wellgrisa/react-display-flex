@@ -8,7 +8,6 @@ export const FlexibleBox: FC<FlexibleBoxPropTypes> = ({
   alignContentBaseline,
   children,
   element,
-  flex,
   ...props
 }: FlexibleBoxPropTypes) =>
   createElement(element, { className: buildFlexibleClassName(props), ...cleanProps({ props }) }, children)

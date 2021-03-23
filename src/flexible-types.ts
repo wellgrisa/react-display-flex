@@ -49,13 +49,15 @@ type ElementType = {
   element?: FlexibleHTMLElements
 }
 
-export enum DisplayEnum {
+export enum FlexibleDisplayEnum {
   flex = 'flex',
-  inlineFlex = 'inline-flex',
+  inlineFlex = 'inlineFlex',
 }
 
 type DisplayType = {
-  flex?: DisplayEnum
+  display?: FlexibleDisplayEnum
+  [FlexibleDisplayEnum.flex]?: boolean
+  [FlexibleDisplayEnum.inlineFlex]?: boolean
 }
 
 export type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
