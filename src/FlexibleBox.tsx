@@ -1,7 +1,7 @@
 import { createElement, FC } from 'react'
 
+import { buildFlexibleClassName } from './build-flexible-class-name'
 import { cleanProps } from './clean-props'
-import { buildFlexibleClassName, flexibleBoxClasses } from './flexible-classes'
 import { FlexibleBoxPropTypes } from './flexible-types'
 
 export const FlexibleBox: FC<FlexibleBoxPropTypes> = ({

@@ -3,7 +3,7 @@ import { flexibleBoxClasses } from './flexible-classes'
 import { FlexibleBoxPropTypes } from './flexible-types'
 
 describe('Cleaning props', () => {
-  it('deletes a single flex class property', () => {
+  it('deletes a single flexible class property', () => {
     const singleFlexibleClassProperty: FlexibleBoxPropTypes = {
       alignContentStart: true,
       role: 'dialog',
@@ -24,7 +24,7 @@ describe('Cleaning props', () => {
     )
   })
 
-  it('deletes every property contained in flex classes object', () => {
+  it('deletes every property contained in flexible classes object', () => {
     let multipleFlexProperties: FlexibleBoxPropTypes = {
       role: 'dialog',
     }
