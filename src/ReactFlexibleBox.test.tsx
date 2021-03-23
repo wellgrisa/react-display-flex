@@ -1,28 +1,28 @@
 import { render, screen } from '@testing-library/react'
 
-import { ReactFlex } from './ReactFlexibleBox'
+import { ReactFlexibleBox } from './ReactFlexibleBox'
 
-const getReactFlex = async () => screen.findByTestId('react-flex')
+const getReactFlexibleBox = async () => screen.findByTestId('react-flexible-box')
 
-describe('ReactFlex', () => {
-  it('renders an element with react-flex class', async () => {
-    render(<ReactFlex />)
+describe('ReactFlexibleBox', () => {
+  it('renders an element with react-flexible class', async () => {
+    render(<ReactFlexibleBox />)
 
-    const reactFlex = await getReactFlex()
+    const reactFlex = await getReactFlexibleBox()
 
     expect(reactFlex.className).toBe('react-flex')
   })
 
   it('renders an element with align items start class', async () => {
-    render(<ReactFlex alignItemsStart />)
+    render(<ReactFlexibleBox alignItemsStart />)
 
-    const reactFlex = await getReactFlex()
+    const reactFlex = await getReactFlexibleBox()
 
     expect(reactFlex).toHaveClass('align-items-start')
   })
 
   it('renders an element with extra html properties', async () => {
-    render(<ReactFlex role="dialog" />)
+    render(<ReactFlexibleBox role="dialog" />)
 
     const reactFlexByRole = screen.getByRole('dialog')
 

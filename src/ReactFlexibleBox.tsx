@@ -10,7 +10,7 @@ const flexClasses: { [key: string]: string } = {
   alignItemsEnd: 'align-items-end',
 }
 
-export const ReactFlex: FC<PropTypes> = ({ children, element, ...rest }: PropTypes) => {
+export const ReactFlexibleBox: FC<PropTypes> = ({ children, element, ...rest }: PropTypes) => {
   const className = Object.keys(rest)
     .filter((key) => rest[key] === true)
     .reduce((classes, property) => `${classes} ${flexClasses[property]}`, 'react-flex')
@@ -23,9 +23,9 @@ export const ReactFlex: FC<PropTypes> = ({ children, element, ...rest }: PropTyp
     return cleanProps
   }, {})
 
-  return createElement(element, { className, 'data-testid': 'react-flex', ...props }, children)
+  return createElement(element, { className, 'data-testid': 'react-flexible-box', ...props }, children)
 }
 
-ReactFlex.defaultProps = {
+ReactFlexibleBox.defaultProps = {
   element: 'div',
 }
