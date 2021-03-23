@@ -1,9 +1,16 @@
-.react-flexible-box-flex {
+.flexible-box-flex {
   display: flex;
 }
 
-.react-flexible-box-inline-flex {
+.flexible-box-inline-flex {
   display: inline-flex;
+}
+
+.flexible-box-column {
+  flex-direction: column;
+}
+.flexible-box-row {
+  flex-direction: row;
 }
 
 .align-items-start {
@@ -120,11 +127,4 @@
 
 .wrap-reverse {
   flex-wrap: wrap-reverse;
-}
-
-.react-flexible-column {
-  flex-direction: column;
-}
-.react-flexible-row {
-  flex-direction: row;
 }

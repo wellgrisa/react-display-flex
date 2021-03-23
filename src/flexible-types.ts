@@ -43,11 +43,22 @@ type FlexDirectionType = {
   row?: boolean
 }
 
+type FlexibleHTMLElements = 'article' | 'aside' | 'div' | 'figure' | 'footer' | 'header' | 'main' | 'nav' | 'section'
+
 type ElementType = {
-  element?: string
+  element?: FlexibleHTMLElements
 }
 
-type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
+export enum DisplayEnum {
+  flex = 'flex',
+  inlineFlex = 'inline-flex',
+}
+
+type DisplayType = {
+  flex?: DisplayEnum
+}
+
+export type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
 
 export type FlexibleBoxPropTypes = PropsWithChildren<
   AlignItemsType &
@@ -56,5 +67,6 @@ export type FlexibleBoxPropTypes = PropsWithChildren<
     AlignSelfPropType &
     FlexDirectionType &
     ElementType &
+    DisplayType &
     HTMLAttributesType
 >

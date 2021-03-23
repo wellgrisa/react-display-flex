@@ -35,8 +35,8 @@ describe('<FlexibleBox />', () => {
 
     const [row, column] = await screen.findAllByTestId('flexible-box')
 
-    expect(row).toHaveClass('flexible-row')
-    expect(column).toHaveClass('flexible-column')
+    expect(row).toHaveClass('flexible-box flexible-box-row')
+    expect(column).toHaveClass('flexible-box flexible-box-column')
   })
 
   it('renders a flexible specific html element', async () => {
