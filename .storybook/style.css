@@ -1,6 +1,6 @@
 .flexible-story {
   gap: 10px;
-  height: 200px;
+  min-height: 200px;
   border: 1px solid MediumTurquoise;
   padding: 20px;
 }

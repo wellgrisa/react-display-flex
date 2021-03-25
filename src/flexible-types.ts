@@ -41,6 +41,8 @@ type AlignSelfPropType = {
 type FlexDirectionType = {
   column?: boolean
   row?: boolean
+  columnReverse?: boolean
+  rowReverse?: boolean
 }
 
 type FlexibleHTMLElements = 'article' | 'aside' | 'div' | 'figure' | 'footer' | 'header' | 'main' | 'nav' | 'section'
@@ -60,6 +62,12 @@ type DisplayType = {
   [FlexibleDisplayEnum.inlineFlex]?: boolean
 }
 
+type WrapType = {
+  wrap?: boolean
+  noWrap?: boolean
+  wrapReverse?: boolean
+}
+
 export type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
 
 export type FlexibleBoxPropTypes = PropsWithChildren<
@@ -70,5 +78,6 @@ export type FlexibleBoxPropTypes = PropsWithChildren<
     FlexDirectionType &
     ElementType &
     DisplayType &
+    WrapType &
     HTMLAttributesType
 >
