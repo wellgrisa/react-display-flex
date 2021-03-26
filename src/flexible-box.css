@@ -9,8 +9,21 @@
 .flexible-box-column {
   flex-direction: column;
 }
+
 .flexible-box-row {
   flex-direction: row;
+}
+
+.flexible-box-wrap {
+  flex-wrap: wrap;
+}
+
+.flexible-box-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flexible-box-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .flexible-box-column-reverse {

@@ -1,8 +1,5 @@
 .flexible-story {
   gap: 10px;
-  min-height: 200px;
-  border: 1px solid MediumTurquoise;
-  padding: 20px;
 }
 
 .flexible-box.example-box {
