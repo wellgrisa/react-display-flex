@@ -13,7 +13,6 @@ export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   justifyContentSpaceEvenly: 'justify-content-space-evenly',
   justifyContentSpaceBetween: 'justify-content-space-between',
   justifyContentBaseline: 'justify-content-baseline',
-  justifyContentStretch: 'justify-content-stretch',
   alignContentStart: 'align-content-start',
   alignContentEnd: 'align-content-end',
   alignContentCenter: 'align-content-center',
@@ -52,7 +51,6 @@ export type FlexibleBoxClasses =
   | 'justifyContentSpaceEvenly'
   | 'justifyContentSpaceBetween'
   | 'justifyContentBaseline'
-  | 'justifyContentStretch'
   | 'alignContentStart'
   | 'alignContentEnd'
   | 'alignContentCenter'

@@ -81,10 +81,6 @@
   justify-content: baseline;
 }
 
-.justify-content-stretch {
-  justify-content: stretch;
-}
-
 .align-content-start {
   align-content: flex-start;
 }

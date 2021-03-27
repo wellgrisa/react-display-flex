@@ -22,3 +22,11 @@ export const FlexBoxTemplate: Story<FlexibleBoxPropTypes> = (args) => (
     ))}
   </Flex>
 )
+
+export const ManyItemsFlexBoxTemplate: Story<FlexibleBoxPropTypes> = (args) => (
+  <Flex className="flexible-story" {...args}>
+    {Array.from({ length: 20 }).map((_: number, index: number) => (
+      <ExampleFlexibleBox key={index}>{index}</ExampleFlexibleBox>
+    ))}
+  </Flex>
+)
