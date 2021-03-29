@@ -1,10 +1,14 @@
 import { flexibleBoxClasses } from './flexible-classes'
 
-export const cleanProps = ({ props }) =>
-  Object.keys(props).reduce((cleanProps: { [key: string]: string }, key) => {
-    if (!flexibleBoxClasses[key]) {
-      cleanProps[key] = props[key]
-    }
+const isFlexibleProperty = (key) => key in flexibleBoxClasses || key === 'display'
 
-    return cleanProps
-  }, {})
+export const cleanProps = ({ props }) =>
+  Object.keys(props).some(isFlexibleProperty)
+    ? Object.keys(props).reduce((cleanProps: { [key: string]: string }, key) => {
+        if (!isFlexibleProperty(key)) {
+          cleanProps[key] = props[key]
+        }
+
+        return cleanProps
+      }, {})
+    : props

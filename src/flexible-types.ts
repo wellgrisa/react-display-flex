@@ -15,7 +15,6 @@ type JustifyContentType = {
   justifyContentSpaceAround?: boolean
   justifyContentSpaceEvenly?: boolean
   justifyContentSpaceBetween?: boolean
-  justifyContentBaseline?: boolean
 }
 
 type AlignContentType = {

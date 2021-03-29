@@ -26,12 +26,6 @@ JustifyContentEnd.args = {
   justifyContentEnd: true,
 }
 
-export const JustifyContentBaseline = FlexBoxTemplate.bind({})
-
-JustifyContentBaseline.args = {
-  justifyContentBaseline: true,
-}
-
 export const JustifyContentSpaceAround = FlexBoxTemplate.bind({})
 
 JustifyContentSpaceAround.args = {
