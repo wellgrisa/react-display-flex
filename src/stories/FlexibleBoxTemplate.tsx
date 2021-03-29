@@ -5,7 +5,11 @@ import { Flex, FlexibleBox } from '../FlexibleBox'
 
 const numberOfBoxes = 5
 
-export const ExampleFlexibleBox = ({ children }) => <FlexibleBox className="example-box">{children}</FlexibleBox>
+export const ExampleFlexibleBox: Story<FlexibleBoxPropTypes> = ({ children, ...args }) => (
+  <FlexibleBox className="example-box" {...args}>
+    {children}
+  </FlexibleBox>
+)
 
 export const FlexibleBoxTemplate: Story<FlexibleBoxPropTypes> = (args) => (
   <FlexibleBox className="flexible-story" {...args}>
