@@ -1,0 +1,51 @@
+:root {
+  --space: 1rem;
+  --border-style: 1px solid;
+}
+
+.layout {
+  flex: 1;
+}
+
+header {
+  padding: var(--space);
+  border: var(--border-style) DarkSalmon;
+}
+
+header ~ div,
+header ~ div > div {
+  flex: 1;
+}
+
+nav {
+  margin-top: var(--space);
+  padding: var(--space);
+  border: var(--border-style) ForestGreen;
+}
+
+section.content {
+  margin-top: var(--space);
+  padding: var(--space);
+  border: var(--border-style) MediumPurple;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: HotPink;
+}
+
+footer {
+  margin-top: var(--space);
+  padding-left: var(--space);
+  border: var(--border-style) Olive;
+}

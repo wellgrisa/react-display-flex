@@ -13,8 +13,8 @@ FlexibleBox.defaultProps = {
   element: 'div',
 }
 
-export const Flex = (props) => <FlexibleBox {...props} flex />
+export const Flex = (props: FlexibleBoxPropTypes) => <FlexibleBox {...props} flex />
 
-export const Column = (props) => <FlexibleBox {...props} column />
+export const Column = (props: FlexibleBoxPropTypes) => <Flex {...props} column />
 
-export const Row = (props) => <FlexibleBox {...props} row />
+export const Row = (props: FlexibleBoxPropTypes) => <Flex {...props} row />
