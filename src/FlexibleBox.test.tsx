@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
 
-import { FlexibleDisplayEnum } from './flexible-types'
 import { Column, FlexibleBox, Row } from './FlexibleBox'
 
 const getFlexibleBox = async ({ dataTestId } = { dataTestId: 'flexible-box' }) => screen.findByTestId(dataTestId)
@@ -23,20 +22,13 @@ describe('<FlexibleBox />', () => {
   })
 
   it('renders an element with the flexible class inline accordingly to the display (flex, inline-flex) structure', async () => {
-    render(<FlexibleBox display={FlexibleDisplayEnum.flex} data-testid="flexible-box" />)
-    render(<FlexibleBox display={FlexibleDisplayEnum.inlineFlex} data-testid="flexible-box" />)
-
     render(<FlexibleBox flex data-testid="flexible-box" />)
     render(<FlexibleBox inlineFlex data-testid="flexible-box" />)
 
-    const [flex, inlineFlex, flexBooleanProperty, inlineFlexBooleanProperty] = await screen.findAllByTestId(
-      'flexible-box',
-    )
+    const [flex, inlineFlex] = await screen.findAllByTestId('flexible-box')
 
     expect(flex).toHaveClass('flexible-box flexible-box-flex')
     expect(inlineFlex).toHaveClass('flexible-box flexible-box-inline-flex')
-    expect(flexBooleanProperty).toHaveClass('flexible-box flexible-box-flex')
-    expect(inlineFlexBooleanProperty).toHaveClass('flexible-box flexible-box-inline-flex')
   })
 
   it('renders an element with align items start class', async () => {

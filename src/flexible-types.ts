@@ -49,15 +49,9 @@ type ElementType = {
   element?: FlexibleHTMLElements
 }
 
-export enum FlexibleDisplayEnum {
-  flex = 'flex',
-  inlineFlex = 'inlineFlex',
-}
-
 type DisplayType = {
-  display?: FlexibleDisplayEnum
-  [FlexibleDisplayEnum.flex]?: boolean
-  [FlexibleDisplayEnum.inlineFlex]?: boolean
+  flex?: boolean
+  inlineFlex?: boolean
 }
 
 type WrapType = {

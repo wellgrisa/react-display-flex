@@ -1,12 +1,11 @@
 import { cleanProps } from './clean-props'
 import { flexibleBoxClasses } from './flexible-classes'
-import { FlexibleBoxPropTypes, FlexibleDisplayEnum } from './flexible-types'
+import { FlexibleBoxPropTypes } from './flexible-types'
 
 describe('Cleaning props', () => {
   it('deletes a single flexible class property', () => {
     const singleFlexibleClassProperty: FlexibleBoxPropTypes = {
       alignContentStart: true,
-      display: FlexibleDisplayEnum.inlineFlex,
       role: 'dialog',
     }
 
@@ -32,8 +31,6 @@ describe('Cleaning props', () => {
 
     Object.keys(flexibleBoxClasses).forEach((flexibleProperty) => (multipleFlexProperties[flexibleProperty] = true))
 
-    multipleFlexProperties.display = FlexibleDisplayEnum.inlineFlex
-
     const cleanedProps = cleanProps({ props: multipleFlexProperties })
 
     expect(cleanedProps).toEqual(
@@ -41,7 +38,7 @@ describe('Cleaning props', () => {
         role: 'dialog',
       }),
     )
-    expect(Object.keys(multipleFlexProperties)).toHaveLength(36)
+    expect(Object.keys(multipleFlexProperties)).toHaveLength(35)
     expect(Object.keys(cleanedProps)).toHaveLength(1)
   })
 })

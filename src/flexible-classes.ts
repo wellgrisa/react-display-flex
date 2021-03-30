@@ -1,5 +1,3 @@
-import { FlexibleDisplayEnum } from './flexible-types'
-
 export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   alignItemsStart: 'align-items-start',
   alignItemsEnd: 'align-items-end',
@@ -30,8 +28,8 @@ export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   row: 'flexible-box-row',
   columnReverse: 'flexible-box-column-reverse',
   rowReverse: 'flexible-box-row-reverse',
-  [FlexibleDisplayEnum.flex]: 'flexible-box-flex',
-  [FlexibleDisplayEnum.inlineFlex]: 'flexible-box-inline-flex',
+  flex: 'flexible-box-flex',
+  inlineFlex: 'flexible-box-inline-flex',
   wrap: 'flexible-box-wrap',
   noWrap: 'flexible-box-no-wrap',
   wrapReverse: 'flexible-box-wrap-reverse',
@@ -70,5 +68,5 @@ export type FlexibleBoxClasses =
   | 'wrap'
   | 'noWrap'
   | 'wrapReverse'
-  | FlexibleDisplayEnum.flex
-  | FlexibleDisplayEnum.inlineFlex
+  | 'flex'
+  | 'inlineFlex'
