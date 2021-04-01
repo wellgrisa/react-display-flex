@@ -9,7 +9,7 @@ Therefore, **there are no properties to deal with value-based attribute** like h
 It relies on boolean properties to make it straightforward and also in the knowledge of the person using it, i.e.: there are no validations regarding its properties, it's just a way of setting the css attributes as [classes](https://github.com/wellgrisa/react-flexible-box/blob/main/src/flexible-box.css). It's just like adding attributes in a class, you can add as much as you want, but it wouldn't work. For example:
 
 ```jsx
-import { FlexibleBox } from 'flexible-box
+import { FlexibleBox } from 'flexible-box'
 
 <FlexibleBox column />
 
@@ -32,7 +32,7 @@ This way the element can be manipulated the way it might be necessary, e.g.: if 
 Another important thing to mention is the possibility of having different elements from `<div />` as the html element to be flexible. This can be seen in a good example in the Mixed - Layout section.
 
 ```jsx
-import { FlexibleBox } from 'flexible-box
+import { FlexibleBox } from 'flexible-box'
 
 <FlexibleBox column element="section" />
 
