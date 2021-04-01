@@ -1,6 +1,6 @@
 # Flexible Box - Why?
 
-[Flexible Box](https://www.w3.org/TR/css-flexbox-1/)([Storybook](https://wellgrisa.github.io/react-flexible-box)) deals with the layout module as simple as possible by using only plain css and classes.
+The [Flexible Box](https://www.w3.org/TR/css-flexbox-1/) - [Storybook](https://wellgrisa.github.io/react-flexible-box), deals with the layout module as simple as possible by using only plain css and classes.
 
 The idea of this another Flex lib is to be dependencyless and aims people who like to have their styles in classes and styles files.
 
