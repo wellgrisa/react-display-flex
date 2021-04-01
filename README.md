@@ -4,7 +4,7 @@
 
 The idea of this another Flex lib is to be dependencyless and aims people who like to have their styles in classes and styles files.
 
-Therefore, **there are no properties to deal with value-based attribute** like height, width, flex-shrink, flex-basis and properties. To handle these, when necessary, you should add a specific className or work with the beautiful cascade stylesheets.
+Therefore, **there are no properties to deal with value-based attribute** like height, width, flex-shrink, flex-basis. To handle these, when necessary, you should add a specific className or work with the beautiful cascade stylesheets.
 
 It relies on boolean properties to make it straightforward and also in the knowledge of the person using it, i.e.: there are no validations regarding its properties, it's just a way of setting the css attributes as [classes](https://github.com/wellgrisa/react-flexible-box/blob/main/src/flexible-box.css). It's just like adding attributes in a class, you can add as much as you want, but it wouldn't work. For example:
 
