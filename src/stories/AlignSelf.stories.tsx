@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Flex, FlexibleBox } from '../FlexibleBox'
+import { Flex } from '../FlexibleBox'
 import { ExampleFlexibleBox } from './FlexibleBoxTemplate'
 
 export default {

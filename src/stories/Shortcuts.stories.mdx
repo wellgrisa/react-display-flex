@@ -1,0 +1,70 @@
+import { Canvas, Meta } from '@storybook/addon-docs/blocks'
+import { FlexBoxTemplate } from './FlexibleBoxTemplate'
+import { Column, Row, Flex } from '../FlexibleBox'
+import { Layout } from './Mixed.stories'
+
+<Meta title="Shortcuts" />
+
+# Shortcuts
+
+As the idea is to be as simple as possible, there are some shortcuts to enhance the use of this lib.
+
+## Column
+
+```jsx
+import { Column } from 'flexible-box
+
+<Column alignItemsCenter /> // it's the same as making <FlexibleBox flex column alignItemsCenter/>
+
+// the following example uses a column with the property alignItemsCenter
+```
+
+<Canvas>
+  <Column alignItemsCenter>
+    <label>These labels are going to</label>
+    <label>be shown in a flex direction column</label>
+    <label>centered</label>
+  </Column>
+</Canvas>
+
+## Row
+
+```jsx
+import { Row } from 'flexible-box
+
+<Row justifyContentSpaceBetween />  // it's the same as making <FlexibleBox flex row justifyContentSpaceBetween/>
+
+// the following example uses a row with the property justifyContentSpaceBetween
+```
+
+<Canvas>
+  <Row justifyContentSpaceBetween>
+    <label>These labels are going to</label>
+    <label>be shown in a flex direction row</label>
+    <label>with space between</label>
+  </Row>
+</Canvas>
+
+## Flex
+
+The idea of the shortcut Flex is to add the attribute `display: flex` which is the most common used when dealing with flexible boxes. The properties related to the display attribute are `flex` and `inlineFlex`.
+
+```jsx
+<FlexibleBox flex /> or <FlexibleBox inlineFlex />
+```
+
+```jsx
+import { Flex } from 'flexible-box
+
+<Flex justifyContentSpaceEvenly />
+
+// the following example uses a row (flex-direction: row; default value) with the property justifyContentSpaceEvenly
+```
+
+<Canvas>
+  <Flex justifyContentSpaceEvenly>
+    <label>These labels are going to</label>
+    <label>be shown in a flex direction row</label>
+    <label>with space between</label>
+  </Flex>
+</Canvas>
