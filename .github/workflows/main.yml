@@ -16,4 +16,5 @@ jobs:
   deploy-storybook:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: npm run deploy-storybook
