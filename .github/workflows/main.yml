@@ -19,5 +19,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-        npm i
-        npm run deploy-storybook
+            npm i
+            npm run deploy-storybook
