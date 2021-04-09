@@ -1,0 +1,84 @@
+import { Canvas, Meta } from '@storybook/addon-docs/blocks'
+import { FlexBoxTemplate } from './FlexibleBoxTemplate'
+import { Column, Row, Flex } from '../FlexibleBox'
+import { Layout } from './Mixed.stories'
+
+<Meta title="Layout Example" />
+
+# Layout Example
+
+To show a good example of the use of this lib, the following example is a whole layout by just using the shortcuts. This can be seen in [this link](https://wellgrisa.github.io/react-flexible-box/?path=/story/container-flexiblebox-mixed--layout).
+
+<Canvas>
+  <Column className="layout" alignSelfStretch>
+    <Row element="header" justifyContentSpaceBetween>
+      <label>Beautiful Logo</label>
+      <label>Log me out please</label>
+    </Row>
+    <Column justifyContentSpaceBetween>
+      <Row>
+        <Column element="nav">
+          <ul>
+            <li>Cool Item</li>
+            <li>Not so cool item</li>
+            <li>Bureaucracy item</li>
+            <li>Lorem</li>
+            <li>Maybe Lorem</li>
+          </ul>
+        </Column>
+        <Column justifyContentCenter element="section" className="content">
+          <Row>
+            <p>Bigger square</p>
+          </Row>
+          <Row alignSelfCenter>
+            <p>in the</p>
+          </Row>
+          <Row alignSelfEnd>
+            <p>room</p>
+          </Row>
+        </Column>
+      </Row>
+      <Column element="footer">
+        <p>Being a sasquatch in this world</p>
+      </Column>
+    </Column>
+  </Column>
+</Canvas>
+
+```jsx
+import { Column, Row } from 'react-flexible-box'
+
+<Column className="layout" alignSelfStretch>
+  <Row element="header" justifyContentSpaceBetween>
+    <label>Beautiful Logo</label>
+    <label>Log me out please</label>
+  </Row>
+  <Column justifyContentSpaceBetween>
+    <Row>
+      <Column element="nav">
+        <ul>
+          <li>Cool Item</li>
+          <li>Not so cool item</li>
+          <li>Bureaucracy item</li>
+          <li>Lorem</li>
+          <li>Maybe Lorem</li>
+        </ul>
+      </Column>
+      <Column justifyContentCenter element="section" className="content">
+        <Row>
+          <p>Bigger square</p>
+        </Row>
+        <Row alignSelfCenter>
+          <p>in the</p>
+        </Row>
+        <Row alignSelfEnd>
+          <p>room</p>
+        </Row>
+      </Column>
+    </Row>
+    <Column element="footer">
+      <p>Being a sasquatch in this world</p>
+    </Column>
+  </Column>
+</Column>
+```
