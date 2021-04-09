@@ -14,10 +14,18 @@ jobs:
       - run: npm i
       - run: npm test
   deploy-storybook:
-    needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-            npm i
-            npm run deploy-storybook
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build-storybook
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: docs-build
