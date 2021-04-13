@@ -2,8 +2,13 @@
   "name": "react-flexible-box",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
+    "build": "yarn clean && tsc",
+    "prepare": "yarn run build",
+    "postbuild": "copyfiles -u 1 src/*.css dist",
+    "clean": "rm -rf dist",
     "test": "jest",
     "test-watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
@@ -47,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "babel-loader": "^8.2.2",
+    "copyfiles": "^2.4.1",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
@@ -56,5 +62,9 @@
     "jest": "^26.6.3",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1"
-  }
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ]
 }

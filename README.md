@@ -11,7 +11,7 @@ It relies on boolean properties to make it straightforward and also in the knowl
 ```jsx
 import { FlexibleBox } from 'react-flexible-box'
 
-;<FlexibleBox column />
+<FlexibleBox column />
 
 // which ends up rendering a
 // <div class="flexible-box-flex flexible-box-column" />
@@ -34,7 +34,7 @@ Another important thing to mention is the possibility of having different elemen
 ```jsx
 import { FlexibleBox } from 'react-flexible-box'
 
-;<FlexibleBox column element="section" />
+<FlexibleBox column element="section" />
 
 // which ends up rendering a
 // <section class="flexible-box-flex flexible-box-column" />
