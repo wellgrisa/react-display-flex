@@ -20,7 +20,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - 'SHA256:sGOVcs+64ocW+t6g4pWx1hiEOADGSn9yw2fmXqW1dZ4'
+            - 'a3:71:9a:77:b4:ae:e4:26:72:94:70:bc:49:5d:c0:21'
       - checkout
       - run: yarn
       - run: yarn deploy-storybook
@@ -28,7 +28,7 @@ jobs:
 workflows:
   test_and_deploy:
     jobs:
-      - test
+      - test:
           filters:
             branches:
               ignore: 'gh-pages'
