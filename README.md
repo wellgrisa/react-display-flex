@@ -1,3 +1,5 @@
+[![<ORG_NAME>](https://circleci.com/gh/wellgrisa/react-flexible-box.svg?style=shield)](<LINK>)
+
 # Flexible Box - Why?
 
 The [Flexible Box](https://www.w3.org/TR/css-flexbox-1/), deals with the layout module as simple as possible by using only plain css and classes. See [Storybook here](https://wellgrisa.github.io/react-flexible-box/).
