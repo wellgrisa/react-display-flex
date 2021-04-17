@@ -14,8 +14,16 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn test
+  deploy:
+    executor: node
+    steps:
+      - run: yarn
+      - run: yarn deploy-storybook
 
 workflows:
-  build_and_test:
+  test_and_deploy:
     jobs:
       - test
+      - deploy:
+          requires:
+            - test
