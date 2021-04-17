@@ -9,3 +9,8 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn test
+
+workflows:
+  build_and_test:
+    jobs:
+      - test
