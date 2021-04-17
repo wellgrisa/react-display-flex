@@ -60,7 +60,7 @@ type WrapType = {
   wrapReverse?: boolean
 }
 
-export type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
+type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
 
 export type FlexibleBoxPropTypes = PropsWithChildren<
   AlignItemsType &

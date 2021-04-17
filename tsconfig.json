@@ -4,9 +4,10 @@
     "esModuleInterop": true,
     "strict": false,
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "sourceMap": true,
-    "outDir": "dist",
+    "declaration": true,
+    "outDir": "lib",
     "jsx": "react-jsx"
   },
   "include": ["src"],
