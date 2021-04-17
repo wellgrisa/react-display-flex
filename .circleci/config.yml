@@ -15,7 +15,8 @@ jobs:
       - run: yarn
       - run: yarn test
   deploy:
-    executor: node
+    docker:
+      - image: circleci/node:14
     steps:
       - run: yarn
       - run: yarn deploy-storybook
