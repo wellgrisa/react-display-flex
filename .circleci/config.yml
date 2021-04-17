@@ -18,6 +18,9 @@ jobs:
     executor:
       name: node/default
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - 'SHA256:sGOVcs+64ocW+t6g4pWx1hiEOADGSn9yw2fmXqW1dZ4'
       - checkout
       - run: yarn
       - run: yarn deploy-storybook
@@ -26,6 +29,12 @@ workflows:
   test_and_deploy:
     jobs:
       - test
+          filters:
+            branches:
+              ignore: 'gh-pages'
       - deploy:
+          filters:
+            branches:
+              only: main
           requires:
             - test
