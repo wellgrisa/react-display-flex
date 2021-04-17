@@ -5,7 +5,8 @@ version: 2.1
 
 jobs:
   test:
-    machine: true
+    docker:
+      - image: circleci/node:14
     steps:
       - run: |
           curl -o- -L https://yarnpkg.com/install.sh | bash
