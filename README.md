@@ -1,4 +1,5 @@
 [![<ORG_NAME>](https://circleci.com/gh/wellgrisa/react-flexible-box.svg?style=shield)](https://app.circleci.com/pipelines/github/wellgrisa/react-flexible-box)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://wellgrisa.github.io/react-flexible-box/)
 
 # Flexible Box - Why?
 
