@@ -5,7 +5,7 @@ version: 2.1
 
 jobs:
   test:
-    executor: my-ubuntu-exec
+    machine: true
     steps:
       - checkout
       - run: yarn
