@@ -15,9 +15,10 @@ jobs:
           command: yarn test
           name: Run YARN tests
   deploy:
-    docker:
-      - image: circleci/node:14
+    executor:
+      name: node/default
     steps:
+      - checkout
       - run: yarn
       - run: yarn deploy-storybook
 
