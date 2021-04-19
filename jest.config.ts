@@ -5,6 +5,7 @@ const config: Config.InitialOptions = {
   setupFilesAfterEnv: ['./jest.setup.ts'],
   preset: 'ts-jest',
   moduleNameMapper: { '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js' },
+  collectCoverage: true,
 }
 
 export default config

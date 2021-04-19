@@ -11,6 +11,14 @@ describe('Building the flexible class name', () => {
     expect(className).toBe('flexible-box')
   })
 
+  it('returns the given className given', () => {
+    const className = buildFlexibleClassName({
+      className: 'given-class-name',
+    })
+
+    expect(className).toBe('given-class-name flexible-box')
+  })
+
   it('returns the flexible class name with a single flex class property', () => {
     const singleFlexibleClassProperty: FlexibleBoxPropTypes = {
       alignContentStart: true,
