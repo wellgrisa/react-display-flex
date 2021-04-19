@@ -70,7 +70,7 @@
     "commitMessage": "Deploy Storybook [ci skip]"
   },
   "lint-staged": {
-    "*.ts": "yarn test --passWithNoTests && yarn make-coverage-badge"
+    "*": "yarn test --coverage --passWithNoTests && yarn make-coverage-badge"
   },
   "files": [
     "lib/*"
