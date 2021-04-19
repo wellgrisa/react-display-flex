@@ -32,7 +32,7 @@ describe('Building the flexible class name', () => {
   it('returns the flexible class name ignoring html attributes', () => {
     const singleFlexibleClassProperty: FlexibleBoxPropTypes = {
       alignContentStart: true,
-      role: 'dialog',
+      role: 'dialoga',
     }
 
     const className = buildFlexibleClassName(singleFlexibleClassProperty)

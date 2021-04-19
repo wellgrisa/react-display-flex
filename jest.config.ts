@@ -6,6 +6,7 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest',
   moduleNameMapper: { '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js' },
   collectCoverage: true,
+  coverageReporters: ['json-summary'],
 }
 
 export default config
