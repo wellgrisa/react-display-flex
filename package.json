@@ -71,8 +71,8 @@
     "commitMessage": "Deploy Storybook [ci skip]"
   },
   "lint-staged": {
-    "*": [
-      "yarn test --findRelatedTests --coverage",
+    "*.ts?(x)": [
+      "yarn test",
       "yarn istanbul-badges-readme"
     ]
   },

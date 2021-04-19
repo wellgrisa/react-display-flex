@@ -1,6 +1,6 @@
 [![<ORG_NAME>](https://circleci.com/gh/wellgrisa/react-flexible-box.svg?style=shield)](https://app.circleci.com/pipelines/github/wellgrisa/react-flexible-box)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://wellgrisa.github.io/react-flexible-box/)
-![Statements](https://img.shields.io/badge/Coverage-Unknown%25-brightgreen.svg)
+![Statements](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
 
 # Flexible Box - Why?
 
@@ -14,7 +14,8 @@ It relies on boolean properties to make it straightforward and also in the knowl
 
 ```jsx
 import { FlexibleBox } from 'react-flexible-box'
-;<FlexibleBox column />
+
+<FlexibleBox column />
 
 // which ends up rendering a
 // <div class="flexible-box-flex flexible-box-column" />
@@ -36,7 +37,8 @@ Another important thing to mention is the possibility of having different elemen
 
 ```jsx
 import { FlexibleBox } from 'react-flexible-box'
-;<FlexibleBox column element="section" />
+
+<FlexibleBox column element="section" />
 
 // which ends up rendering a
 // <section class="flexible-box-flex flexible-box-column" />
