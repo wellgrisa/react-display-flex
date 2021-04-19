@@ -69,11 +69,6 @@
   "storybook-deployer": {
     "commitMessage": "Deploy Storybook [ci skip]"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.ts": "yarn test"
   },
