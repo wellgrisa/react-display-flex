@@ -26,7 +26,7 @@ describe('Cleaning props', () => {
 
   it('deletes every property contained in flexible classes object', () => {
     let multipleFlexProperties: FlexibleBoxPropTypes = {
-      role: 'dialoga',
+      role: 'dialog',
     }
 
     Object.keys(flexibleBoxClasses).forEach((flexibleProperty) => (multipleFlexProperties[flexibleProperty] = true))
