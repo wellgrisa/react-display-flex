@@ -5,13 +5,19 @@
 
 # Flexible Box - Why?
 
-The [Flexible Box](https://www.w3.org/TR/css-flexbox-1/), deals with the layout module as simple as possible by using only plain css and classes. See [Storybook here](https://wellgrisa.github.io/react-flexible-box/).
+The [Flexible Box](https://www.w3.org/TR/css-flexbox-1/) deals with the layout module as simple as possible by using only plain css and classes.
 
-The idea of this another Flex lib is to be dependencyless and aims people who like to have their styles in classes and styles files.
+See [Storybook here](https://wellgrisa.github.io/react-flexible-box/).
 
-Therefore, **there are no properties to deal with value-based attribute** like height, width, flex-shrink, flex-basis. To handle these, when necessary, you should add a specific className or work with the beautiful cascade stylesheets.
+See [props here](https://wellgrisa.github.io/react-flexible-box/?path=/story/props--page).
 
-It relies on boolean properties to make it straightforward and also in the knowledge of the person using it, i.e.: there are no validations regarding its properties, it's just a way of setting the css attributes as [classes](https://github.com/wellgrisa/react-flexible-box/blob/main/src/flexible-box.css). It's just like adding attributes in a class, you can add as much as you want, but it wouldn't work. For example:
+The idea of this another Flex lib is to be dependencyless and aim people who like to have their styles in classes and styles files only.
+
+Therefore, **there are no properties to deal with value-based attribute** like height, width, flex-shrink, flex-basis. To handle these, when necessary, you should add a specific className or work with the cascade stylesheets. The only exception is the property `flexGrow` which will add the class `flexible-box-flex-grow`, adding the attribute `flex-grow: 1` to the component. The idea behind this is a very common scenario which we need the component to grow in the full area.
+
+This lib relies on boolean properties to make it straightforward and also in the knowledge of the person using it, i.e.: there are no validations regarding its properties, it's just a way of setting the css attributes as [classes](https://github.com/wellgrisa/react-flexible-box/blob/main/src/flexible-box.css). It's just like adding attributes in a class, you can add as much as you want, but it wouldn't work if you add confusing rules.
+
+A simple usage:
 
 ```jsx
 import { FlexibleBox } from 'react-flexible-box'
