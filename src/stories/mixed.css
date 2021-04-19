@@ -3,18 +3,9 @@
   --border-style: 1px solid;
 }
 
-.layout {
-  flex: 1;
-}
-
 header {
   padding: var(--space);
   border: var(--border-style) DarkSalmon;
-}
-
-header ~ div,
-header ~ div > div {
-  flex: 1;
 }
 
 nav {
@@ -27,7 +18,6 @@ section.content {
   margin-top: var(--space);
   padding: var(--space);
   border: var(--border-style) MediumPurple;
-  flex: 1;
 }
 
 ul {

@@ -17,13 +17,13 @@ export default {
 } as Meta
 
 export const Layout = () => (
-  <Column className="layout" alignSelfStretch>
+  <Column className="layout" alignSelfStretch flexGrow>
     <Row element="header" justifyContentSpaceBetween>
       <label>Beautiful Logo</label>
       <label>Log me out please</label>
     </Row>
-    <Column justifyContentSpaceBetween>
-      <Row>
+    <Column justifyContentSpaceBetween flexGrow>
+      <Row flexGrow>
         <Column element="nav">
           <ul>
             <li>Cool Item</li>
@@ -33,7 +33,7 @@ export const Layout = () => (
             <li>Maybe Lorem</li>
           </ul>
         </Column>
-        <Column justifyContentCenter element="section" className="content">
+        <Column flexGrow justifyContentCenter element="section" className="content">
           <Row>
             <p>Bigger square</p>
           </Row>

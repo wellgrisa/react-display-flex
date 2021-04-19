@@ -38,7 +38,7 @@ describe('Cleaning props', () => {
         role: 'dialog',
       }),
     )
-    expect(Object.keys(multipleFlexProperties)).toHaveLength(35)
+    expect(Object.keys(multipleFlexProperties)).toHaveLength(36)
     expect(Object.keys(cleanedProps)).toHaveLength(1)
   })
 })

@@ -10,13 +10,13 @@ import { Layout } from './Mixed.stories'
 To show a good example of the use of this lib, the following example is a whole layout by just using the shortcuts. This can be seen in [this link](https://wellgrisa.github.io/react-flexible-box/?path=/story/container-flexiblebox-mixed--layout).
 
 <Canvas>
-  <Column className="layout" alignSelfStretch>
+  <Column className="layout" alignSelfStretch flexGrow>
     <Row element="header" justifyContentSpaceBetween>
       <label>Beautiful Logo</label>
       <label>Log me out please</label>
     </Row>
-    <Column justifyContentSpaceBetween>
-      <Row>
+    <Column justifyContentSpaceBetween flexGrow>
+      <Row flexGrow>
         <Column element="nav">
           <ul>
             <li>Cool Item</li>
@@ -26,7 +26,7 @@ To show a good example of the use of this lib, the following example is a whole 
             <li>Maybe Lorem</li>
           </ul>
         </Column>
-        <Column justifyContentCenter element="section" className="content">
+        <Column flexGrow justifyContentCenter element="section" className="content">
           <Row>
             <p>Bigger square</p>
           </Row>
@@ -47,13 +47,14 @@ To show a good example of the use of this lib, the following example is a whole 
 
 ```jsx
 import { Column, Row } from 'react-flexible-box'
-;<Column className="layout" alignSelfStretch>
+
+<Column className="layout" alignSelfStretch flexGrow>
   <Row element="header" justifyContentSpaceBetween>
     <label>Beautiful Logo</label>
     <label>Log me out please</label>
   </Row>
-  <Column justifyContentSpaceBetween>
-    <Row>
+  <Column justifyContentSpaceBetween flexGrow>
+    <Row flexGrow>
       <Column element="nav">
         <ul>
           <li>Cool Item</li>
@@ -63,7 +64,7 @@ import { Column, Row } from 'react-flexible-box'
           <li>Maybe Lorem</li>
         </ul>
       </Column>
-      <Column justifyContentCenter element="section" className="content">
+      <Column flexGrow justifyContentCenter element="section" className="content">
         <Row>
           <p>Bigger square</p>
         </Row>

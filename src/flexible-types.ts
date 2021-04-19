@@ -43,6 +43,10 @@ type FlexDirectionType = {
   rowReverse?: boolean
 }
 
+type FlexGrowType = {
+  flexGrow?: boolean
+}
+
 type FlexibleHTMLElements = 'article' | 'aside' | 'div' | 'figure' | 'footer' | 'header' | 'main' | 'nav' | 'section'
 
 type ElementType = {
@@ -68,6 +72,7 @@ export type FlexibleBoxPropTypes = PropsWithChildren<
     AlignContentType &
     AlignSelfPropType &
     FlexDirectionType &
+    FlexGrowType &
     ElementType &
     DisplayType &
     WrapType &

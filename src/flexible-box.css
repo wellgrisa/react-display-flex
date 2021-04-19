@@ -137,6 +137,10 @@
   align-self: auto;
 }
 
+.flexible-box-flex-grow {
+  flex-grow: 1;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
