@@ -1,6 +1,6 @@
 [![<ORG_NAME>](https://circleci.com/gh/wellgrisa/react-flexible-box.svg?style=shield)](https://app.circleci.com/pipelines/github/wellgrisa/react-flexible-box)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://wellgrisa.github.io/react-flexible-box/)
-<img src="./coverage/badge.svg">
+![Statements](https://img.shields.io/badge/Coverage-Unknown%25-brightgreen.svg)
 
 # Flexible Box - Why?
 
