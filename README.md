@@ -25,7 +25,7 @@ import { FlexibleBox } from 'react-display-flex'
 <FlexibleBox column />
 
 // which ends up rendering a
-// <div class="react-display-flex react-display-flex-column" />
+// <div class="react-display-flex-flex react-display-flex-column" />
 ```
 
 ```css
@@ -38,9 +38,7 @@ import { FlexibleBox } from 'react-display-flex'
 }
 ```
 
-This way the element can be manipulated the way it might be necessary, e.g.: if it's a child element, it can have other attributes set on it.
-
-Another important thing to mention is the possibility of having different elements from `<div />` as the html element to be flexible. This can be seen in a good example in the Mixed - Layout section.
+Another important thing to mention is the possibility of having different elements from `<div />` as the html element to be flexible. This can be seen in a good example in the [Layout Example](https://wellgrisa.github.io/react-display-flex/?path=/story/layout-example--page).
 
 ```jsx
 import { FlexibleBox } from 'react-display-flex'
@@ -51,7 +49,7 @@ import { FlexibleBox } from 'react-display-flex'
 // <section class="react-display-flex-flex react-display-flex-column" />
 ```
 
-There are another couple of libs which handles the Flexbox Layout with different approaches.
+There are another libs which handles the Flexbox Layout with different approaches:
 
 - [flexbox-react](https://github.com/nachoaIvarez/flexbox-react)
 - [react-css-flex](https://github.com/bikk-uk/react-css-flex)

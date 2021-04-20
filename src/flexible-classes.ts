@@ -21,7 +21,7 @@ export const flexibleBoxClasses: { [key in FlexibleBoxClasses]: string } = {
   column: 'react-display-flex-column',
   columnReverse: 'react-display-flex-column-reverse',
   flex: 'react-display-flex-flex',
-  flexGrow: 'react-display-flex-flex-grow',
+  flexGrow: 'react-display-flex-grow',
   inlineFlex: 'react-display-flex-inline-flex',
   justifyContentCenter: 'justify-content-center',
   justifyContentEnd: 'justify-content-end',

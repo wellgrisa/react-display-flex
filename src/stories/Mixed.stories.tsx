@@ -17,7 +17,7 @@ export default {
 } as Meta
 
 export const Layout = () => (
-  <Column className="layout" alignSelfStretch flexGrow>
+  <Column className="layout" flexGrow>
     <Row element="header" justifyContentSpaceBetween>
       <label>Beautiful Logo</label>
       <label>Log me out please</label>
