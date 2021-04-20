@@ -1,6 +1,6 @@
 import { Canvas, Meta } from '@storybook/addon-docs/blocks'
-import { FlexBoxTemplate } from './FlexibleBoxTemplate'
-import { Column, Row, Flex } from '../FlexibleBox'
+import { FlexBoxTemplate } from './ReactDisplayFlexTemplate'
+import { Column, Row, Flex } from '../ReactDisplayFlex'
 import { Layout } from './Mixed.stories'
 
 <Meta title="Shortcuts" />
@@ -12,7 +12,7 @@ As the idea is to be as simple as possible, there are some shortcuts to enhance 
 ## Column
 
 ```jsx
-import { Column } from 'react-flexible-box'
+import { Column } from 'react-display-flex'
 
 <Column alignItemsCenter /> // it's the same as making <FlexibleBox flex column alignItemsCenter/>
 
@@ -30,7 +30,7 @@ import { Column } from 'react-flexible-box'
 ## Row
 
 ```jsx
-import { Row } from 'react-flexible-box'
+import { Row } from 'react-display-flex'
 
 <Row justifyContentSpaceBetween /> // it's the same as making <FlexibleBox flex row justifyContentSpaceBetween/>
 
@@ -54,7 +54,7 @@ The idea of the shortcut Flex is to add the attribute `display: flex` which is t
 ```
 
 ```jsx
-import { Flex } from 'react-flexible-box'
+import { Flex } from 'react-display-flex'
 
 <Flex justifyContentSpaceEvenly />
 

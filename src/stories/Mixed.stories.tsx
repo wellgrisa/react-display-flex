@@ -2,10 +2,10 @@ import './mixed.css'
 
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Column, Flex, Row } from '../FlexibleBox'
+import { Column, Flex, Row } from '../ReactDisplayFlex'
 
 export default {
-  title: 'Container/FlexibleBox/Mixed',
+  title: 'Container/ReactDisplayFlex/Mixed',
   component: Flex,
   decorators: [
     (Story) => (

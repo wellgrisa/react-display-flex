@@ -1,10 +1,10 @@
 import { flexibleBoxClasses } from './flexible-classes'
-import { FlexibleBoxPropTypes } from './flexible-types'
+import { ReactDisplayFlexPropTypes } from './react-display-flex-types'
 
-export const buildFlexibleClassName = ({ className, ...props }: FlexibleBoxPropTypes) =>
+export const buildFlexibleClassName = ({ className, ...props }: ReactDisplayFlexPropTypes) =>
   Object.keys(props)
     .filter((key) => key in flexibleBoxClasses)
     .reduce(
       (classes, property) => `${classes} ${flexibleBoxClasses[property] ? flexibleBoxClasses[property] : ''}`,
-      `${className ? `${className} ` : ''}flexible-box`,
+      `${className ? `${className} ` : ''}react-display-flex`,
     )

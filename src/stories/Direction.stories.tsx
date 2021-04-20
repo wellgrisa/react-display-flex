@@ -1,10 +1,10 @@
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Flex } from '../FlexibleBox'
-import { FlexBoxTemplate } from './FlexibleBoxTemplate'
+import { Flex } from '../ReactDisplayFlex'
+import { FlexBoxTemplate } from './ReactDisplayFlexTemplate'
 
 export default {
-  title: 'Container/FlexibleBox/Direction',
+  title: 'Container/ReactDisplayFlex/Direction',
   component: Flex,
 } as Meta
 

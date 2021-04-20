@@ -1,13 +1,13 @@
 import { Canvas, Meta } from '@storybook/addon-docs/blocks'
-import { FlexBoxTemplate } from './FlexibleBoxTemplate'
-import { Column, Row, Flex } from '../FlexibleBox'
+import { FlexBoxTemplate } from './ReactDisplayFlexTemplate'
+import { Column, Row, Flex } from '../ReactDisplayFlex'
 import { Layout } from './Mixed.stories'
 
 <Meta title="Layout Example" />
 
 # Layout Example
 
-To show a good example of the use of this lib, the following example is a whole layout by just using the shortcuts. This can be seen in [this link](https://wellgrisa.github.io/react-flexible-box/?path=/story/container-flexiblebox-mixed--layout).
+To show a good example of the use of this lib, the following example is a whole layout by just using the shortcuts. This can be seen in [this link](https://wellgrisa.github.io/react-display-flex/?path=/story/container-flexiblebox-mixed--layout).
 
 <Canvas>
   <Column className="layout" alignSelfStretch flexGrow>
@@ -46,7 +46,7 @@ To show a good example of the use of this lib, the following example is a whole 
 </Canvas>
 
 ```jsx
-import { Column, Row } from 'react-flexible-box'
+import { Column, Row } from 'react-display-flex'
 
 <Column className="layout" alignSelfStretch flexGrow>
   <Row element="header" justifyContentSpaceBetween>

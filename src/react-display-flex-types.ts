@@ -66,7 +66,7 @@ type WrapType = {
 
 type HTMLAttributesType = React.HTMLAttributes<HTMLElement>
 
-export type FlexibleBoxPropTypes = PropsWithChildren<
+export type ReactDisplayFlexPropTypes = PropsWithChildren<
   AlignItemsType &
     JustifyContentType &
     AlignContentType &

@@ -1,3 +1,3 @@
-export * from './FlexibleBox'
+export * from './ReactDisplayFlex'
 
-export { FlexibleBoxPropTypes } from './flexible-types'
+export { ReactDisplayFlexPropTypes } from './react-display-flex-types'

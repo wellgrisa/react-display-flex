@@ -1,0 +1,150 @@
+.react-display-flex.react-display-flex-flex {
+  display: flex;
+}
+
+.react-display-flex.react-display-flex-inline-flex {
+  display: inline-flex;
+}
+
+.react-display-flex.react-display-flex-column {
+  flex-direction: column;
+}
+
+.react-display-flex.react-display-flex-row {
+  flex-direction: row;
+}
+
+.react-display-flex.react-display-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.react-display-flex.react-display-flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.react-display-flex.react-display-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.react-display-flex.react-display-flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.react-display-flex.react-display-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.react-display-flex.align-items-start {
+  align-items: flex-start;
+}
+
+.react-display-flex.align-items-end {
+  align-items: flex-end;
+}
+
+.react-display-flex.align-items-center {
+  align-items: center;
+}
+
+.react-display-flex.align-items-baseline {
+  align-items: baseline;
+}
+
+.react-display-flex.align-items-stretch {
+  align-items: stretch;
+}
+
+.react-display-flex.justify-content-start {
+  justify-content: flex-start;
+}
+
+.react-display-flex.justify-content-end {
+  justify-content: flex-end;
+}
+
+.react-display-flex.justify-content-center {
+  justify-content: center;
+}
+
+.react-display-flex.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.react-display-flex.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.react-display-flex.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.react-display-flex.justify-content-baseline {
+  justify-content: baseline;
+}
+
+.react-display-flex.align-content-start {
+  align-content: flex-start;
+}
+
+.react-display-flex.align-content-end {
+  align-content: flex-end;
+}
+
+.react-display-flex.align-content-center {
+  align-content: center;
+}
+
+.react-display-flex.align-content-space-around {
+  align-content: space-around;
+}
+
+.react-display-flex.align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.react-display-flex.align-content-space-between {
+  align-content: space-between;
+}
+
+.react-display-flex.align-content-baseline {
+  align-content: baseline;
+}
+
+.react-display-flex.align-content-stretch {
+  align-content: stretch;
+}
+
+.react-display-flex.align-self-start {
+  align-self: flex-start;
+}
+
+.react-display-flex.align-self-end {
+  align-self: flex-end;
+}
+
+.react-display-flex.align-self-center {
+  align-self: center;
+}
+
+.react-display-flex.align-self-baseline {
+  align-self: baseline;
+}
+
+.react-display-flex.align-self-stretch {
+  align-self: stretch;
+}
+
+.react-display-flex.align-self-auto {
+  align-self: auto;
+}
+
+.react-display-flex.react-display-flex-flex-grow {
+  flex-grow: 1;
+}
+
+.react-display-flex.wrap {
+  flex-wrap: wrap;
+}
+
+.react-display-flex.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

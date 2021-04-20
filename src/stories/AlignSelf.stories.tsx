@@ -1,14 +1,14 @@
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Flex } from '../FlexibleBox'
-import { ExampleFlexibleBox } from './FlexibleBoxTemplate'
+import { Flex } from '../ReactDisplayFlex'
+import { ExampleFlexibleBox } from './ReactDisplayFlexTemplate'
 
 export default {
-  title: 'Container/FlexibleBox/AlignSelf',
+  title: 'Container/ReactDisplayFlex/AlignSelf',
   component: Flex,
   decorators: [
     (Story) => (
-      <Flex className="flexible-story" style={{ minHeight: 200 }}>
+      <Flex className="react-display-flex-story" style={{ minHeight: 200 }}>
         <ExampleFlexibleBox>0</ExampleFlexibleBox>
         <ExampleFlexibleBox>1</ExampleFlexibleBox>
         <Story />

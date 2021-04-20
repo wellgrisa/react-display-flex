@@ -1,12 +1,12 @@
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Flex } from '../FlexibleBox'
-import { FlexBoxTemplate } from './FlexibleBoxTemplate'
+import { Flex } from '../ReactDisplayFlex'
+import { FlexBoxTemplate } from './ReactDisplayFlexTemplate'
 
 const maxWidthStyle = { style: { maxWidth: '30rem', border: '1px solid OrangeRed', padding: 20 } }
 
 export default {
-  title: 'Container/FlexibleBox/Wrap',
+  title: 'Container/ReactDisplayFlex/Wrap',
   component: Flex,
 } as Meta
 

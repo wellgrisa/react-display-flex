@@ -1,5 +1,5 @@
 {
-  "name": "react-flexible-box",
+  "name": "react-display-flex",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wellgrisa/react-flexible-box.git"
+    "url": "git+https://github.com/wellgrisa/react-display-flex.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wellgrisa/react-flexible-box/issues"
+    "url": "https://github.com/wellgrisa/react-display-flex/issues"
   },
-  "homepage": "https://github.com/wellgrisa/react-flexible-box#readme",
+  "homepage": "https://github.com/wellgrisa/react-display-flex#readme",
   "dependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",

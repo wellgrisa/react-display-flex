@@ -1,10 +1,10 @@
 import { Meta } from '@storybook/react/types-6-0'
 
-import { Flex } from '../FlexibleBox'
-import { ManyItemsFlexBoxTemplate as FlexBoxTemplate } from './FlexibleBoxTemplate'
+import { Flex } from '../ReactDisplayFlex'
+import { ManyItemsFlexBoxTemplate as FlexBoxTemplate } from './ReactDisplayFlexTemplate'
 
 export default {
-  title: 'Container/FlexibleBox/AlignContent',
+  title: 'Container/ReactDisplayFlex/AlignContent',
   component: Flex,
 } as Meta
 

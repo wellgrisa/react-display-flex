@@ -1,12 +1,12 @@
-.flexible-story {
+.react-display-flex-story {
   gap: 10px;
 }
 
-.flexible-box.example-box {
+.react-display-flex.example-box {
   background-color: DodgerBlue;
   padding: 50px;
 }
 
-.flexible-box.example-box:nth-child(even) {
+.react-display-flex.example-box:nth-child(even) {
   background-color: LightGreen;
 }
