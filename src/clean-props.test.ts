@@ -1,10 +1,10 @@
 import { cleanProps } from './clean-props'
 import { flexibleBoxClasses } from './flexible-classes'
-import { ReactDisplayFlexPropTypes } from './react-display-flex-types'
+import { ReactDisplayFlexPropTypesWithHtmlAttributes } from './react-display-flex-types'
 
 describe('Cleaning props', () => {
   it('deletes a single flexible class property', () => {
-    const singleFlexibleClassProperty: ReactDisplayFlexPropTypes = {
+    const singleFlexibleClassProperty: ReactDisplayFlexPropTypesWithHtmlAttributes = {
       alignContentStart: true,
       role: 'dialog',
     }
@@ -25,7 +25,7 @@ describe('Cleaning props', () => {
   })
 
   it('deletes every property contained in flexible classes object', () => {
-    let multipleFlexProperties: ReactDisplayFlexPropTypes = {
+    let multipleFlexProperties: ReactDisplayFlexPropTypesWithHtmlAttributes = {
       role: 'dialog',
     }
 
