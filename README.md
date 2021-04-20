@@ -5,7 +5,7 @@
 
 # React Display Flex - Why?
 
-The [react-display-box](https://www.w3.org/TR/css-flexbox-1/) deals with the layout module as simple as possible by using only plain css and classes.
+The `react-display-box` deals with the [flexible layout module](https://www.w3.org/TR/css-flexbox-1/) as simple as possible by using only plain css and classes.
 
 See [Storybook here](https://wellgrisa.github.io/react-display-flex/).
 
