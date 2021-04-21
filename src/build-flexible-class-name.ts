@@ -1,7 +1,7 @@
 import { flexibleBoxClasses } from './flexible-classes'
-import { ReactDisplayFlexPropTypesWithHtmlAttributes } from './react-display-flex-types'
+import { ReactDisplayFlexPropTypes } from './react-display-flex-types'
 
-export const buildFlexibleClassName = ({ className, ...props }: ReactDisplayFlexPropTypesWithHtmlAttributes) =>
+export const buildFlexibleClassName = ({ className, ...props }: ReactDisplayFlexPropTypes) =>
   Object.keys(props)
     .filter((key) => key in flexibleBoxClasses)
     .reduce(

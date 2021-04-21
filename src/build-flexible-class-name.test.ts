@@ -1,6 +1,6 @@
 import { buildFlexibleClassName } from './build-flexible-class-name'
 import { flexibleBoxClasses } from './flexible-classes'
-import { ReactDisplayFlexPropTypes, ReactDisplayFlexPropTypesWithHtmlAttributes } from './react-display-flex-types'
+import { ReactDisplayFlexPropTypes } from './react-display-flex-types'
 
 describe('Building the flexible class name', () => {
   it('returns the flexible class name', () => {
@@ -30,7 +30,7 @@ describe('Building the flexible class name', () => {
   })
 
   it('returns the flexible class name ignoring html attributes', () => {
-    const singleFlexibleClassProperty: ReactDisplayFlexPropTypesWithHtmlAttributes = {
+    const singleFlexibleClassProperty: ReactDisplayFlexPropTypes = {
       alignContentStart: true,
       role: 'dialog',
     }
