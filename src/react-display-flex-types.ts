@@ -47,7 +47,18 @@ type FlexGrowType = {
   flexGrow?: boolean
 }
 
-type FlexibleHTMLElements = 'article' | 'aside' | 'div' | 'figure' | 'footer' | 'header' | 'main' | 'nav' | 'section'
+type FlexibleHTMLElements =
+  | 'article'
+  | 'aside'
+  | 'div'
+  | 'figure'
+  | 'footer'
+  | 'header'
+  | 'main'
+  | 'nav'
+  | 'section'
+  | 'ul'
+  | 'li'
 
 type ElementType = {
   element?: FlexibleHTMLElements
